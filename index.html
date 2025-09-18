@@ -8,6 +8,9 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
         }
         .title {
             font-size: 2em;
@@ -32,8 +35,36 @@
             color: #666;
         }
         video {
-            width: 600px; /* Set the video width */
+            width: 100%;
+            max-width: 600px; /* Maximum width on larger screens */
             height: auto; /* Maintain aspect ratio */
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.5em;
+                margin-top: 10px;
+            }
+            .subtitle {
+                font-size: 1.2em;
+                margin-top: 8px;
+            }
+            .message {
+                font-size: 0.9em;
+                margin-top: 8px;
+                padding: 0 10px;
+            }
+            .footnote {
+                font-size: 0.7em;
+                margin-top: 3px;
+                padding: 0 10px;
+            }
+            .link {
+                font-size: 0.9em;
+                margin-top: 15px;
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
